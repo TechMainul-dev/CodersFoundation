@@ -53,10 +53,19 @@ body {
     padding-bottom: 50px;
 }
 
-#explore-main-section .fa {
+#explore-main-section .fa,
+#share-main-section .fa {
     font-size: var(--icon-font-size);
     color: var(--font-color);
     background: var(--body-bg);
     padding: 5px;
+    border-radius: 5px;
+}
+
+#create-main-section .fa {
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    padding: 4px;
+    font-size: var(--icon-font-size);
     border-radius: 5px;
 }
