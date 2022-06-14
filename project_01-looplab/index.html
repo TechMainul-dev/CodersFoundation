@@ -9,14 +9,19 @@
     <title>LoopLAB | Home</title>
     <link rel="icon" href="https://icons.getbootstrap.com/assets/img/icons-hero.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="../project_/assets/bootstrap-5.2.0-beta1/bootstrap.min.css">
     <link rel="stylesheet" href="../project_/assets/bootstrap-icons-1.2.1/font/bootstrap-icons.css">
-    <!----------------CSS file added here---------------->
+    <!----------------CSS file added here---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----------------font awesome CDN link here---------------->
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">LoopLAB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
@@ -25,7 +30,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mt-5">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home-top-section">Home</a>
                     </li>
@@ -43,7 +48,95 @@
             </div>
         </div>
     </nav>
+    <!-------------------------------------------------------
+    =====================navbar end==========================
+    -------------------------------------------------------->
 
+
+    <section id="home-section">
+        <div class="dark-overlay">
+            <div class="home-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 d-none d-sm-block">
+                            <h1 class="display-4">Build <strong>social profiles</strong> and gain revenue and <strong>
+                                    profits</strong></h1>
+
+                            <div class="d-flex flex-row">
+                                <div class="p-4 mt-2">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <p class="p-4 lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste
+                                    itaque et
+                                    vel commodi nulla voluptate cupiditate debitis laborum?
+                                </p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="p-4 mt-2">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <p class="p-4 lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste
+                                    itaque et
+                                    vel commodi nulla voluptate cupiditate debitis laborum?
+                                </p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="p-4">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <p class="p-4 lead">
+                                    <span class="text-warning">bootstrap font is here</span> amet, consectetur
+                                    adipisicing elit. Voluptas officiis iste
+                                    itaque et
+                                    vel commodi nulla voluptate cupiditate debitis laborum?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card text-center bg-primary">
+                                <div class="card-body">
+                                    <h3 class="text-capitalize">sign up today</h3>
+                                    <p>Please fill out this form to register</p>
+
+                                    <form action="#">
+                                        <div class="">
+                                            <label for="username" class="form-label"></label>
+                                            <input type="text" class="form-control" name="username"
+                                                aria-describedby=" helpId" placeholder="Username">
+                                        </div>
+                                        <div class="">
+                                            <label for="email" class="form-label"></label>
+                                            <input type="email" class="form-control" name="email"
+                                                aria-describedby="emailHelpId" placeholder="Email">
+                                        </div>
+                                        <div class="">
+                                            <label for="pass_1" class="form-label"></label>
+                                            <input type="password" class="form-control" name="pass_1"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="">
+                                            <label for="pass_02" class="form-label"></label>
+                                            <input type="password" class="form-control" name="pass_02"
+                                                placeholder="Confirm Password">
+                                        </div>
+
+                                        <button type="submit"
+                                            class="btn btn-primary border form-control mt-4">Submit</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------
+    =====================home section end====================
+    -------------------------------------------------------->
 
 
 
