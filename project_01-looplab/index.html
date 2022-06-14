@@ -310,8 +310,44 @@
     <footer class="text-center my-5">
         <h3>LoopLAB</h3>
         <p>Copyright &copy; 2022</p>
-        <p>Designed By: <span class="text-warning">Mainul Hasan Khan</span></p>
-        <button type="button" class="btn btn-primary">Contact us</button>
+        <p>Designed By: <a href="https://github.com/TechMainul-dev" class="text-warning">Mainul Hasan Khan</a> </p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modelId">
+            Contact Us
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Contact Us</h3>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="text-start">
+                            <div class="mb-3 form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                            <div class="mb-3 form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                            <div class=" mb-3 form-group">
+                                <label for="text" class="form-label">Message</label>
+                                <textarea class="form-control" name="text" rows="2"></textarea>
+                            </div>
+                            <input type="submit" value="send" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <!-------------------------------------------------------

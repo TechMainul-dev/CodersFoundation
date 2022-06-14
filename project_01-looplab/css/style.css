@@ -69,3 +69,7 @@ body {
     font-size: var(--icon-font-size);
     border-radius: 5px;
 }
+
+footer .modal-content{
+    background: var(--body-bg);
+}
