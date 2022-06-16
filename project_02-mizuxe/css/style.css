@@ -1,4 +1,5 @@
 :root {
+    --bg-color: #252525;
     --primary-color: #3292a6;
     --primary-overlay: rgba(50, 146, 156, 0.7);
 }
@@ -23,7 +24,7 @@ body {
 }
 
 .navbar .nav-item .nav-link {
-    color: #252525;
+    color: var(--bg-color);
 }
 
 .navbar .nav-item .nav-link:hover {
@@ -64,4 +65,33 @@ body {
 
 #showcase a {
     border-radius: 0 !important;
+}
+
+#showcase img {
+    height: 80%;
+}
+
+#subscribe {
+    background: var(--bg-color);
+}
+
+#subscribe .btn {
+    background: var(--primary-color);
+}
+
+#boxes .card {
+    border: 2px solid var(--primary-color);
+}
+
+#boxes .card_bg {
+    background-color: var(--primary-color);
+}
+
+#boxes h3 {
+    color: var(--primary-color);
+}
+
+#boxes .card_bg,
+#boxes .card_bg h3 {
+    color: #fff;
 }
