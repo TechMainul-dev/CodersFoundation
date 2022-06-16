@@ -1,11 +1,10 @@
 :root {
     --primary-color: #3292a6;
-    --icon-font-size: 30px;
+    --primary-overlay: rgba(50, 146, 156, 0.7);
 }
 
 body {
-    background: var(--body-bg) !important;
-    color: var(--font-color) !important;
+    margin-top: 90px !important;
 }
 
 .navbar {
@@ -29,4 +28,40 @@ body {
 
 .navbar .nav-item .nav-link:hover {
     color: var(--primary-color);
+}
+
+#showcase {
+    background-image: url(../img/mountains.jpg);
+    min-height: 600px;
+    position: relative;
+}
+
+#showcase .primary-overlay {
+    background: var(--primary-overlay);
+    min-height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#showcase h1 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#showcase p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#showcase a {
+    border-radius: 0 !important;
 }
