@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mizuxe</title>
     <link rel="icon" href="https://icons.getbootstrap.com/assets/img/icons-hero.png">
+    <link rel="stylesheet" href="./src/navbar-fixed.css">
+    <!-- navbar fixed------  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="../project_/assets/bootstrap-5.2.0-beta1/bootstrap.min.css">
@@ -21,9 +23,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">Mizuxe</a>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/mlogo.png" alt="logo/png" width="50" height="50">
+                <h3 class="d-inline align-middle">Mizuxe</h3>
+            </a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,17 +37,17 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home_section">Home</a>
+                        <a class="nav-link" href="#showcase">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_section">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#authors_section">
+                        <a class="nav-link" href="#authors">
                             Meet The Authors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact_section">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -60,6 +65,7 @@
     <!--------------javaScript file added here-------------->
     <script src="./js/main.js"></script>
     <script src="../project_/assets/bootstrap-5.2.0-beta1/bootstrap.bundle.min.js"></script>
+    <script src="./src/navbar-fixed.js"></script>
 </body>
 
 </html>
