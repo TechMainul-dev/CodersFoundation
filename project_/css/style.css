@@ -1,0 +1,11 @@
+:root {
+    --body-bg: #333;
+    --font-color: #fff;
+    --primary-color: #008ed6;
+    --icon-font-size: 30px;
+}
+
+body {
+    background: var(--body-bg) !important;
+    color: var(--font-color) !important;
+}
