@@ -105,3 +105,25 @@ body {
 #about .display-4 {
     color: var(--primary-color);
 }
+
+#authors h2 {
+    color: var(--primary-color);
+}
+
+#authors .card:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#authors img {
+    margin-top: -60px;
+}
+
+#authors .fa-brands {
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+#authors .card:hover .fa-brands {
+    color: #fff;
+}
