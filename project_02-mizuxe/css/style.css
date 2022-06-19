@@ -8,6 +8,12 @@ body {
     margin-top: 90px !important;
 }
 
+.borderRadiusZero {
+    border-radius: 0 !important;
+}
+
+/*-----------common css end-----------*/
+
 .navbar {
     box-shadow: 2px 2px 5px var(--primary-color);
     background: #fff;
@@ -61,10 +67,6 @@ body {
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-}
-
-#showcase a {
-    border-radius: 0 !important;
 }
 
 #showcase img {
