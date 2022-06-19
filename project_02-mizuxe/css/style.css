@@ -12,6 +12,10 @@ body {
     border-radius: 0 !important;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /*-----------common css end-----------*/
 
 .navbar {
@@ -96,4 +100,8 @@ body {
 #boxes .card_bg,
 #boxes .card_bg h3 {
     color: #fff;
+}
+
+#about .display-4 {
+    color: var(--primary-color);
 }
