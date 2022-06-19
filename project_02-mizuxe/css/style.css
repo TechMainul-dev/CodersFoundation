@@ -127,3 +127,11 @@ body {
 #authors .card:hover .fa-brands {
     color: #fff;
 }
+
+#contact form button {
+    background: var(--primary-color);
+}
+
+#footer-main {
+    background: var(--primary-color);
+}
