@@ -74,7 +74,7 @@ body {
 }
 
 #showcase img {
-    height: 80%;
+    height: 640px;
 }
 
 #subscribe {
@@ -86,7 +86,7 @@ body {
 }
 
 #boxes .card {
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 #boxes .card_bg {
