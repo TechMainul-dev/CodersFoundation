@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="name" content="Mainul Hasan Khan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap-5</title>
+    <title>Home</title>
     <link rel="icon" href="./img/icon.png">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./assets/bootstrap-5.2.0-beta1/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/bootstrap-icons-1.2.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../project_/assets/bootstrap-5.2.0-beta1/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/uikit.min.css">
+
+    <link rel="stylesheet" href="../project_/assets/bootstrap-icons-1.2.1/font/bootstrap-icons.css">
     <!-- --------------CSS file added here----------------- -->
 
     <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -22,18 +24,262 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-md" uk-sticky="start: 200; animation: uk-animation-slide-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Glozzom</a>
+            <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -------------------Carousel Slider--------------- -->
+    <section id="showcase" class="bg-dark">
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-slide-to="0" data-bs-target="#carouselIndicators" class="active" aria-label="1"></li>
+                <li data-bs-slide-to="1" data-bs-target="#carouselIndicators" aria-label="2"></li>
+                <li data-bs-slide-to="2" data-bs-target="#carouselIndicators" aria-label="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-img-1 active">
+                    <div class="container">
+                        <div class="carousel-caption pb-5 mb-5">
+                            <h2 class="display-4">Heading one</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla
+                                laborum atque nostrum dicta suscipit libero incidunt perspiciatis sapiente magni.</p>
+                            <a href="#" class="btn btn-danger">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-2">
+                    <div class="container">
+                        <div class="carousel-caption pb-5 mb-5 text-start">
+                            <h2 class="display-4">Heading two</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla
+                                laborum atque nostrum dicta suscipit libero incidunt perspiciatis sapiente magni.</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-3">
+                    <div class="container">
+                        <div class="carousel-caption pb-5 mb-5 text-end">
+                            <h2 class="display-4">Heading three</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla
+                                laborum atque nostrum dicta suscipit libero incidunt perspiciatis sapiente magni.</p>
+                            <a href="#" class="btn btn-warning">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#carouselIndicators" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carouselIndicators" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
 
 
+    <!-- -------------------Home icon--------------------- -->
+    <section id="homeIcon" class="homeIcon py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="bi bi-gear"></i>
+                    <h3>Turning Gears</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsam,
+                        laborum aut atque illum!</p>
+
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-cloud-fill"></i>
+                    <h3>Sending Data</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsam,
+                        laborum aut atque illum!</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-cart-plus"></i>
+                    <h3>Making Money</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsam,
+                        laborum aut atque illum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- ------------Home - Get started------------------- -->
+    <section id="getStarted" class="getStarted py-5 text-center text-light">
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 pt-4">
+                        <h3 class="text-light">Are You Ready To Get Started ?</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem
+                            laboriosam vero recusandae repellendus? Impedit iure est sit voluptatum blanditiis cum sequi
+                            laudantium quod dicta, a quaerat vel, obcaecati!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- ------------Home - Info section------------------- -->
+    <section id="homeInfo" class="homeInfo py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga explicabo itaque
+                        eligendi eos distinctio voluptate cupiditate eius dolor nostrum repellendus?</p>
+                    <a href="#" class="btn btn-outline-dark">Read More</a>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <img src="./img/pc.jpeg" class="img-fluid rounded" alt="pc/jpeg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------Home - Video section------------------- -->
+    <section id="homeVideo" class="homeVideo text-center">
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 pt-2">
+                        <div uk-lightbox>
+                            <a href="https://youtu.be/43rTanJhQqM">
+                                <i class="bi bi-youtube text-danger"></i>
+                            </a>
+                        </div>
+                        <h2 class="text-light mt-0">Bootstrap 5 course video</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------Photo - Gallery section------------------ -->
+    <section id="gallery" class="gallery text-center py-5" uk-lightbox>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Photo Gallery</h2>
+                    <p class="lead">Check out our photos</p>
+                </div>
+            </div>
+            <div class="row gallery-img">
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image1.jpeg">
+                            <img src="./img/image1.jpeg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image2.jpeg">
+                            <img src="./img/image2.jpeg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image3.jpeg">
+                            <img src="./img/image3.jpeg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image4.jpeg">
+                            <img src="./img/image4.jpeg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image5.jpg">
+                            <img src="./img/image5.jpg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <a href="./img/image6.jpg">
+                            <img src="./img/image6.jpg" class="img-fluid" alt="img/jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------News Letter section------------------ -->
+    <section id="newsLetter" class="newsLetter py-5 bg-dark text-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-light">Signup Fpr Our Newsletter</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi asperiores
+                        labore unde beatae omnis praesentium excepturi libero ratione nulla provident quo iure natus ab
+                        quisquam atque autem odit, quae accusamus? Dicta quia, dolores tenetur fugiat necessitatibus
+                        libero explicabo quasi?</p>
+
+                    <form action="#" class="row g g-md-3 g-sm-0 ms-auto justify-content-center" method="post">
+                        <div class="col-12 col-md-auto">
+                            <label class="visually-hidden" for="name">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="col-12 my-3 col-md-auto">
+                            <label class="visually-hidden" for="email">Name</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="col col-md-auto">
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------Copyright section------------------ -->
+    <footer id="copyright" class="copyright text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead mb-0">copyright 2022 &copy; Mainul Hasan Khan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
     <!-- ------------javaScript file added here------------ -->
     <script src="./js/main.js"></script>
-    <script src="./assets/bootstrap-5.2.0-beta1/bootstrap.bundle.min.js"></script>
+    <script src="../project_//assets/bootstrap-5.2.0-beta1/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
 </body>
 
 </html>

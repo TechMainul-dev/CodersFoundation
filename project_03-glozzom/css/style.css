@@ -1,14 +1,149 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #212529;
+    --dark-overlay: rgba(0, 0, 0, 0.7);
     --small: 16px;
     --medium: 20px;
     --large: 28px;
     --title: 32px;
-    --heading: 56px;
+    --icon-size: 50px;
 }
 
 body {
-    background: var(--body-bg) !important;
-    color: var(--font-color) !important;
+    background: var(--primary-color);
+}
+
+p.lead {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 992px) {
+    p.lead {
+        -webkit-line-clamp: 3;
+    }
+}
+
+/* -----------Common css end----------- */
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar .nav-item {
+    padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-item {
+        padding-left: 0;
+    }
+}
+
+.navbar .nav-link {
+    text-transform: uppercase;
+}
+
+
+/* ----------Carousel Slider----------  */
+.carousel .carousel-item {
+    height: 450px;
+}
+
+.carousel .carousel-img-1 {
+    background: url("../img/image1.jpeg");
+    background-size: cover;
+}
+
+.carousel .carousel-img-2 {
+    background: url("../img/image2.jpeg");
+    background-size: cover;
+}
+
+.carousel .carousel-img-3 {
+    background: url("../img/image3.jpeg");
+    background-size: cover;
+}
+
+/* --------Home icon------------------- */
+.homeIcon i.bi {
+    font-size: var(--icon-size);
+    margin-top: 2px;
+}
+
+.homeIcon h3 {
+    font-size: var(--title);
+    margin: 2px auto;
+}
+
+.homeIcon p.lead {
+    margin-bottom: 0;
+}
+
+/* ----Home - Get started-------------- */
+.getStarted {
+    background: url("../img/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    position: relative;
+}
+
+.getStarted .dark-overlay {
+    background: var(--dark-overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----Home - Video section------------ */
+.homeVideo {
+    background: url("../img/people.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    position: relative;
+}
+
+.homeVideo .dark-overlay {
+    background: var(--dark-overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homeVideo i {
+    font-size: var(--icon-size);
+}
+
+/* ----Photo - Gallery section--------- */
+.gallery img {
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .gallery img {
+        min-height: 300px;
+        margin-top: 0px;
+        background-size: cover;
+    }
+}
+
+/* ---------Copyright section--------- */
+footer {
+    background: #000;
+    color: var(--primary-color);
 }
