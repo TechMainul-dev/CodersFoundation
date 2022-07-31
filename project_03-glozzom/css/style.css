@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #212529;
+    --small: 16px;
+    --medium: 20px;
+    --large: 28px;
+    --title: 32px;
+    --heading: 56px;
+}
+
+body {
+    background: var(--body-bg) !important;
+    color: var(--font-color) !important;
+}
