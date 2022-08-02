@@ -210,6 +210,38 @@ footer {
 
 
 
+/* =======================================
+----------Service Page css start---------
+======================================= */
+.servicesPageHeader {
+    background: url(../img/image3.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+.priceTable h3 {
+    font-size: var(--large);
+}
+
+.priceTable .list-group-item {
+    padding: 12px 0;
+    font-weight: 400;
+}
+
+.faq .btn {
+    font-size: var(--medium);
+    text-align: left;
+}
+
+.faq .accordion .accordion-item {
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+
+
 
 /* ------common media query start------ */
 
