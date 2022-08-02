@@ -21,12 +21,6 @@ p.lead {
     -webkit-box-orient: vertical;
 }
 
-@media (max-width: 992px) {
-    p.lead {
-        -webkit-line-clamp: 3;
-    }
-}
-
 /* -----------Common css end----------- */
 
 .navbar {
@@ -49,21 +43,21 @@ p.lead {
 
 
 /* ----------Carousel Slider----------  */
-.carousel .carousel-item {
+.showcase .carousel-item {
     height: 450px;
 }
 
-.carousel .carousel-img-1 {
+.showcase .carousel-img-1 {
     background: url("../img/image1.jpeg");
     background-size: cover;
 }
 
-.carousel .carousel-img-2 {
+.showcase .carousel-img-2 {
     background: url("../img/image2.jpeg");
     background-size: cover;
 }
 
-.carousel .carousel-img-3 {
+.showcase .carousel-img-3 {
     background: url("../img/image3.jpeg");
     background-size: cover;
 }
@@ -146,4 +140,81 @@ p.lead {
 footer {
     background: #000;
     color: var(--primary-color);
+}
+
+
+/* =======================================
+----------About Us Page css start---------
+======================================= */
+.pageHeader {
+    background: url(../img/image1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+.aboutInfo p.lead {
+    -webkit-line-clamp: 6;
+}
+
+.aboutInfo h3 {
+    font-size: var(--large);
+}
+
+.aboutInfo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.iconBox i {
+    font-size: var(--icon-size);
+    padding: 5px 0;
+}
+
+.iconBox h3 {
+    font-size: var(--large);
+    margin: 12px 0 10px 0;
+    color: var(--primary-color);
+}
+
+.iconBox p.lead {
+    font-size: var(--medium);
+    -webkit-line-clamp: 3;
+}
+
+.testimonial .slider {
+    text-align: left;
+}
+
+.testimonial .testi-item {
+    font-style: italic;
+}
+
+.testimonial .carousel-inner {
+    padding: 0 30px;
+}
+
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev {
+    color: #000;
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+}
+
+.testimonial button:hover {
+    color: #000;
+    font-weight: 900;
+}
+
+
+
+
+/* ------common media query start------ */
+
+@media (max-width: 992px) {
+    p.lead {
+        -webkit-line-clamp: 3;
+    }
 }
