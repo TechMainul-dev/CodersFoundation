@@ -249,12 +249,6 @@ footer {
     background: rgba(0, 0, 0, 0.063);
 }
 
-@media (max-width: 768px) {
-    .faq .accordion .accordion-item {
-        /* margin: 0px auto 5px auto; */
-    }
-}
-
 
 /* =======================================
 ----------blogPageHeader css start--------
