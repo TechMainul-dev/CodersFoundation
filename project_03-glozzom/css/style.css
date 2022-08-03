@@ -21,6 +21,11 @@ p.lead {
     -webkit-box-orient: vertical;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 /* -----------Common css end----------- */
 
 .navbar {
@@ -235,15 +240,54 @@ footer {
 }
 
 .faq .accordion .accordion-item {
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin-bottom: 10px;
     border-radius: 5px;
 }
-.faq .accordion .accordion-item h2{
+
+.faq .accordion .accordion-item h2 {
     background: rgba(0, 0, 0, 0.063);
 }
 
+@media (max-width: 768px) {
+    .faq .accordion .accordion-item {
+        /* margin: 0px auto 5px auto; */
+    }
+}
 
 
+/* =======================================
+----------blogPageHeader css start--------
+======================================= */
+.blogPageHeader {
+    background: url(../img/image6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+.blogGallery p.lead {
+    -webkit-line-clamp: 6;
+}
+
+
+/* =======================================
+----------contactPageHeader css start--------
+======================================= */
+.contactPageHeader {
+    background: url(../img/image3.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+.contact .contactDetails h3 {
+    margin: 0;
+}
+
+.contact .contactDetails p {
+    margin: 5px auto 15px auto;
+}
 
 
 /* ------common media query start------ */
