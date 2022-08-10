@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 :root {
     --body-bg: #333;
     --font-color: #fff;
-    --primary-color: #008ed6;
+    --primary-color: #198754;
+    --font-size: 20px;
+    --title-size: 40px;
     --icon-font-size: 30px;
 }
 
 body {
-    background: var(--body-bg) !important;
-    color: var(--font-color) !important;
+    font-family: 'Inconsolata', monospace !important;
+}
+
+.navbar-brand {
+    font-size: var(--icon-font-size);
+}
+
+ul li a.nav-link {
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-weight: bold;
+}
+
+ul li a:hover,
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+@media (max-width: 992px) {
+
+    .carousel-item img {
+        height: 400px;
+    }
 }
